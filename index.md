@@ -1,4 +1,3 @@
-
 ---
 layout: home
 
@@ -7,8 +6,8 @@ hero:
   text: "AI-Powered Web Development"
   tagline: "Build beautiful React applications through natural conversation"
   image:
-    src: /kliv-welcome-image.png
-    alt: Kliv Logo
+    src: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80
+    alt: AI and Technology
   actions:
     - theme: brand
       text: Get Started
@@ -31,3 +30,27 @@ features:
   - title: 📱 Responsive by Default
     details: Every component and layout is mobile-first and responsive. Your apps work perfectly on all devices.
 ---
+
+## What is Kliv?
+
+Kliv is an AI-powered web development platform that lets you build React applications through natural conversation. Simply describe what you want to build, and Kliv will generate the code, create components, and handle the technical details for you.
+
+## Quick Example
+
+```
+You: "Create a landing page for a coffee shop with a hero section, menu, and contact form"
+
+Kliv: "I'll create a beautiful coffee shop landing page with a hero section featuring your brand, an elegant menu display, and a contact form. Let me build that for you..."
+```
+
+Within seconds, you'll have a fully functional, responsive website ready to deploy.
+
+## Why Choose Kliv?
+
+- **No Coding Required**: Build professional applications without writing a single line of code
+- **Instant Results**: See your ideas come to life in real-time
+- **Production Ready**: Deploy immediately with enterprise-grade hosting
+- **Fully Customizable**: Every aspect can be modified through conversation
+- **Modern Standards**: Built with the latest web technologies and best practices
+
+Ready to start building? [Get started now →](/getting-started/)

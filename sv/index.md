@@ -1,4 +1,3 @@
-
 ---
 layout: home
 
@@ -7,7 +6,7 @@ hero:
   text: "AI-driven webbutveckling"
   tagline: "Bygg vackra React-applikationer genom naturlig konversation"
   image:
-    src: /kliv-welcome-image.png
+    src: /kliv-logo.svg
     alt: Kliv Logotyp
   actions:
     - theme: brand
@@ -31,3 +30,27 @@ features:
   - title: 📱 Responsiv som standard
     details: Varje komponent och layout är mobil-först och responsiv. Dina appar fungerar perfekt på alla enheter.
 ---
+
+## Vad är Kliv?
+
+Kliv är en AI-driven webbutvecklingsplattform som låter dig bygga React-applikationer genom naturlig konversation. Beskriv helt enkelt vad du vill bygga, så genererar Kliv koden, skapar komponenter och hanterar de tekniska detaljerna åt dig.
+
+## Snabbt exempel
+
+```
+Du: "Skapa en landningssida för ett kafé med en hero-sektion, meny och kontaktformulär"
+
+Kliv: "Jag skapar en vacker kafé-landningssida med en hero-sektion som framhäver ditt varumärke, en elegant menyvisning och ett kontaktformulär. Låt mig bygga det åt dig..."
+```
+
+Inom några sekunder har du en fullt fungerande, responsiv webbplats redo att distribuera.
+
+## Varför välja Kliv?
+
+- **Ingen kodning krävs**: Bygg professionella applikationer utan att skriva en enda rad kod
+- **Omedelbara resultat**: Se dina idéer komma till liv i realtid
+- **Produktionsredo**: Distribuera omedelbart med enterprise-kvalitet hosting
+- **Helt anpassningsbar**: Alla aspekter kan modifieras genom konversation
+- **Moderna standarder**: Byggd med den senaste webbteknologin och bästa praxis
+
+Redo att börja bygga? [Kom igång nu →](/sv/getting-started/)
