@@ -5,9 +5,6 @@ hero:
   name: "Kliv"
   text: "AI-driven webbutveckling"
   tagline: "Bygg vackra React-applikationer genom naturlig konversation"
-  image:
-    src: /kliv-logo.svg
-    alt: Kliv Logotyp
   actions:
     - theme: brand
       text: Kom igång

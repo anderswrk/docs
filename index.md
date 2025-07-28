@@ -5,9 +5,6 @@ hero:
   name: "Kliv"
   text: "AI-Powered Web Development"
   tagline: "Build beautiful React applications through natural conversation"
-  image:
-    src: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80
-    alt: AI and Technology
   actions:
     - theme: brand
       text: Get Started

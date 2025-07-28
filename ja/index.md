@@ -5,9 +5,6 @@ hero:
   name: "Kliv"
   text: "AI駆動のWeb開発"
   tagline: "自然な会話を通じて美しいReactアプリケーションを構築"
-  image:
-    src: /kliv-logo.svg
-    alt: Kliv ロゴ
   actions:
     - theme: brand
       text: はじめに
