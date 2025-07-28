@@ -27,8 +27,4 @@ gallery grid, about section, and contact form. Let me build that for you..."
 
 ## Next Steps
 
-- [Learn about advanced features](/advanced/)
-- [Explore example projects](/examples/)
-- [Join our community](/community/)
-
 Ready to build something amazing? Start your first conversation with Kliv!

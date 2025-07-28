@@ -27,8 +27,4 @@ gallerigrid, om-sektion och kontaktformulär. Låt mig bygga det åt dig..."
 
 ## Nästa steg
 
-- [Lär dig om avancerade funktioner](/sv/advanced/)
-- [Utforska exempelprojekt](/sv/examples/)
-- [Gå med i vår community](/sv/community/)
-
 Redo att bygga något fantastiskt? Starta din första konversation med Kliv!
