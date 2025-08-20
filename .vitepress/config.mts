@@ -28,7 +28,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Building', link: '/building/ai-assistant' },
+      { text: 'Templates', link: '/templates/app-store' },
       { text: 'Publishing', link: '/publishing/basics' }
     ],
 
@@ -51,14 +51,6 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Building with Kliv',
-          items: [
-            { text: 'AI Assistant', link: '/building/ai-assistant' },
-            { text: 'Common Features', link: '/building/common-features' },
-            { text: 'Advanced Features', link: '/building/advanced-features' }
-          ]
-        },
-        {
           text: 'Templates',
           items: [
             { text: 'App Store', link: '/templates/app-store' },
@@ -73,33 +65,18 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Backend Integration',
+          text: 'Integrations',
           items: [
-            { text: 'Supabase Integration', link: '/backend/supabase' },
-            { text: 'Real-time Features', link: '/backend/realtime' }
-          ]
-        },
-        {
-          text: 'Collaboration',
-          items: [
-            { text: 'User Management', link: '/collaboration/user-management' },
-            { text: 'GitHub Integration', link: '/collaboration/github' }
+            { text: 'Supabase', link: '/backend/supabase' },
+            { text: 'GitHub', link: '/collaboration/github' }
           ]
         },
         {
           text: 'Account Management',
           items: [
+            { text: 'User Management', link: '/collaboration/user-management' },
             { text: 'Security', link: '/account/security' },
-            { text: 'Billing', link: '/account/billing' },
-            { text: 'Settings', link: '/account/settings' }
-          ]
-        },
-        {
-          text: 'Advanced Topics',
-          items: [
-            { text: 'Performance Optimization', link: '/advanced/performance' },
-            { text: 'E-commerce Features', link: '/advanced/ecommerce' },
-            { text: 'Custom Development', link: '/advanced/custom-development' }
+            { text: 'Billing', link: '/account/billing' }
           ]
         },
         {
