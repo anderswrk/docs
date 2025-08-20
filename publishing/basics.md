@@ -1,17 +1,39 @@
 # Publishing Basics
 
-## The publish button
+Your Kliv sites are automatically published and hosted for you. Here's how it works.
 
-Content coming soon...
+## Site URLs
 
-## Understanding site URLs
+Every site gets a unique URL: `yoursite.kliv.site`
 
-Content coming soon...
+**URL Generation:**
+- **Templates:** Based on the original template name
+- **From Scratch:** AI generates a relevant name based on your site
+- **Editable:** Change your subdomain anytime (must be unique)
 
-## Preview vs production
+## Auto-Publishing
 
-Content coming soon...
+**Default Behavior:** Sites publish automatically when you make changes  
+**Manual Control:** Turn off auto-publishing to preview changes before going live
 
-## Autopublish feature
+**When to disable auto-publishing:**
+- Making experimental changes
+- Want to review before publishing
+- Working on major redesigns
 
-Content coming soon...
+## Free vs Pro Publishing
+
+**Free Users:**
+- Free hosting on `yoursite.kliv.site`
+- Editable subdomain name
+- "Made with Kliv" badge displayed
+
+**Pro Users:**
+- All free features included
+- No "Made with Kliv" badge
+- Custom domain support
+- Priority hosting performance
+
+---
+
+**Next:** [Set up a custom domain →](/publishing/custom-domains)
