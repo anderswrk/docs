@@ -42,12 +42,6 @@ Build a completely custom website tailored to your exact requirements.
 - **From Scratch:** Unique concept, specific requirements, want maximum control
 - **Not sure?** Start with a template—you can always create a new custom project later
 
-## The Kliv Workspace
-
-**Left Panel:** Chat with Kliv to describe changes and view conversation history  
-**Right Panel:** Live preview with real-time updates as you build  
-**Top Bar:** Project settings, source code toggle, and publish button
-
 ## Writing Effective Prompts
 
 ### **Starting From Scratch**
