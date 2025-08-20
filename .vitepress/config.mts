@@ -82,7 +82,6 @@ export default defineConfig({
           text: 'Help & Support',
           items: [
             { text: 'FAQ', link: '/help/faq' },
-            { text: 'Troubleshooting', link: '/help/troubleshooting' },
             { text: 'Getting Help', link: '/help/getting-help' }
           ]
         }
