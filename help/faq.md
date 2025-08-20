@@ -19,37 +19,57 @@ Kliv builds applications using modern web technologies:
 - Various other modern libraries as needed
 
 ### Is Kliv free to use?
-Kliv offers both free and paid plans. The free plan includes basic features and limited usage, while paid plans offer more advanced features, higher usage limits, and priority support.
+Yes! Kliv offers a free plan with 5 credits per day (up to 30 per month) that includes full website hosting on kliv.site domains. Free sites display a small "Made with Kliv" badge and support up to 10 team members. Professional plans provide monthly credit allowances, custom domain support, remove the attribution badge, and include unlimited team members.
 
 ## Building Applications
 
+### Should I start with a template or from scratch?
+**Use a template if:** You find one that's 70%+ similar to your needs, want to launch quickly, or are building a common type of site. Templates come fully fleshed out with multiple pages and features.
+
+**Start from scratch if:** Your concept is unique, you have specific requirements, or want complete creative control. You'll need to provide detailed initial prompts, but you get a completely custom result.
+
 ### What types of applications can I build?
 You can build virtually any type of web application:
-- Landing pages and marketing sites
-- Business websites and portfolios
-- Web applications and dashboards
-- E-commerce stores
-- Blogs and content sites
-- Interactive tools and calculators
+- **Rapid prototypes** and MVPs for startups
+- **Personal websites**, portfolios, and blogs
+- **Membership sites** with user authentication
+- **E-commerce stores** with product catalogs
+- **Business applications** and dashboards
+- **SaaS applications** with user management
+- **Creative projects** and interactive tools
+
+### How do credits work?
+**Full credit (1 credit):** Used when the AI takes action on your project - editing files, making changes, adding features, or any modification.
+
+**Half credit (0.5 credits):** Used for conversational responses without actions - answering questions, providing guidance, or explanations.
+
+**Free plan:** 5 credits daily, 30 monthly max, automatically refresh each day.
+**Pro plans:** Monthly allowances that can be used anytime, reset each billing cycle.
 
 ### How do I communicate with Kliv effectively?
-- Be specific about what you want
-- Provide examples when possible
-- Break complex requests into smaller parts
-- Use descriptive language for visual elements
-- Ask for clarifications when needed
+**For from-scratch builds:** Provide detailed initial prompts including business name, address, services offered, pricing, contact details, target audience, and design preferences. The more specific you are, the better results you'll get.
+
+**For modifications:** Reference specific sections ("In the hero section..."), be specific about colors and positioning, and ask to see mobile versions when needed.
 
 ### Can I modify the generated code?
 Yes! You can view all the generated code and even export it to work on locally. Kliv also supports importing existing React projects.
 
-### How do I add custom functionality?
-Simply describe the functionality you want in the chat. Kliv can add:
-- Form handling and validation
-- API integrations
-- Database connections
-- Authentication systems
-- Payment processing
-- And much more
+### How do I add backend functionality like user accounts?
+For any backend features (user authentication, databases, server-side processing), you need to connect Supabase integration. Click the Supabase button in your project to set up an account and link it. Once connected, the AI can implement:
+- User registration and login systems
+- Database storage and management
+- Real-time features and subscriptions
+- Server-side functions and processing
+- File storage and management
+
+### How does GitHub integration work?
+When you connect GitHub, every AI change automatically generates a commit and pushes to your repository. This provides:
+- Complete source code backup under your control
+- Full version history of your project
+- Ability to work locally or collaborate with developers
+- Bidirectional sync between Kliv and GitHub
+
+We recommend making changes primarily in Kliv to take full advantage of AI assistance.
 
 ## Technical Questions
 
@@ -57,7 +77,12 @@ Simply describe the functionality you want in the chat. Kliv can add:
 Yes, you can ask Kliv to create custom components or modify existing ones. You can also import components from external libraries.
 
 ### How does Kliv handle responsive design?
-All applications built with Kliv are responsive by default. Kliv uses Tailwind CSS's mobile-first approach to ensure your app works perfectly on all devices.
+All applications built with Kliv are responsive by default and accessible to users with disabilities. Kliv uses React, TypeScript, Tailwind CSS, and Vite with automatic mobile optimization, semantic HTML structure, and accessibility compliance built in.
+
+### What's the difference between templates and from-scratch builds?
+**Templates:** Get fully functional sites with multiple pages and features already built. Perfect for quick launches when you find something 70%+ similar to your needs. You're somewhat limited by the template structure but get a head start.
+
+**From-scratch:** Requires detailed initial prompts but gives complete creative control. You'll get a skeleton initially and need to flesh out each section through conversation, but the result is completely custom.
 
 ### Can I integrate with external APIs?
 Absolutely! Kliv can help you integrate with any REST API, GraphQL endpoint, or third-party service. Just describe what you want to connect to.
@@ -75,8 +100,13 @@ Kliv follows modern web development best practices:
 ### How do I deploy my application?
 Click the "Publish" button in Kliv, and your application will be deployed instantly. You'll get a live URL that you can share immediately.
 
+### How does publishing work?
+Sites are automatically published with unique URLs like `yoursite.kliv.site`. The URL is generated based on your template name or AI analysis of your from-scratch prompt. You can edit the subdomain name anytime (must be unique across all Kliv sites).
+
+**Auto-publishing** is enabled by default - changes go live immediately. You can disable this to manually control when changes are published.
+
 ### Can I use my own domain?
-Yes! Paid plans include custom domain support. You can connect your own domain name to your Kliv application.
+Yes! Pro subscribers can connect custom domains by adding a CNAME record pointing to `sites.kliv.dev`. Kliv automatically handles SSL certificates and provides a setup wizard with provider-specific instructions. Custom domains remove the "Made with Kliv" badge completely.
 
 ### Where are applications hosted?
 Kliv applications are hosted on a global CDN for fast loading times worldwide. All hosting includes SSL certificates and automatic scaling.
@@ -84,19 +114,29 @@ Kliv applications are hosted on a global CDN for fast loading times worldwide. A
 ### Can I export my code?
 Yes, you can export your entire project as a standard React application that you can run locally or deploy anywhere.
 
+## Team Collaboration
+
+### Can I work with team members?
+Yes! Every Kliv account supports multiple users sharing the same projects and credit pool. Free accounts support up to 10 users, Pro accounts have unlimited team members at no extra cost.
+
+### How do user roles work?
+**Regular users** can edit projects and use the AI assistant. **Admin users** can also manage the team, send invitations, and access account settings. Enterprise accounts support custom roles with granular permissions.
+
+### How do I invite team members?
+Go to user management, enter their email address, and send an invitation. They'll receive an email to join your account and access shared projects.
+
 ## Account and Billing
 
+### What are the different subscription plans?
+**Free:** 5 credits daily (30/month), kliv.site hosting, "Made with Kliv" badge, up to 10 users
+**Professional:** Monthly credit allowances, custom domains, no attribution badge, unlimited users, priority support  
+**Enterprise:** SAML/SSO, custom roles, dedicated instances, advanced features
+
 ### How do I upgrade my plan?
-Go to your account settings and select the plan that best fits your needs. Upgrades take effect immediately.
+Visit the subscription management page in account settings. You can upgrade, downgrade, or cancel anytime through the secure Stripe interface.
 
-### What happens if I exceed my usage limits?
-Free plan users will be notified when approaching limits. Paid plan users have higher limits, and we'll contact you if you need additional capacity.
-
-### Can I cancel my subscription?
-Yes, you can cancel your subscription at any time from your account settings. You'll retain access to paid features until the end of your billing period.
-
-### Do you offer refunds?
-We offer a 30-day money-back guarantee for all paid plans. Contact support if you're not satisfied with your experience.
+### How is payment handled?
+All payments are processed securely through Stripe. Kliv never sees your payment information, ensuring enterprise-grade security for all transactions.
 
 ## Troubleshooting
 
