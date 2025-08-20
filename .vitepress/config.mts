@@ -44,7 +44,6 @@ export default defineConfig({
         {
           text: 'Getting Started',
           items: [
-            { text: 'Overview', link: '/getting-started/' },
             { text: 'Creating an Account', link: '/getting-started/creating-account' },
             { text: 'Your First Website', link: '/getting-started/first-website' },
             { text: 'Understanding Credits', link: '/getting-started/credits' }
