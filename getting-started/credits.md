@@ -1,135 +1,43 @@
 # Understanding Credits
 
-Credits are the currency that powers your Kliv experience. This simple system ensures fair usage while giving you the flexibility to build at your own pace.
+Credits are the usage currency that powers your interactions with Kliv's AI assistant. The system is designed to be simple and predictable, charging based on whether the AI takes action on your project or simply provides guidance through conversation.
 
-## How the Credit System Works
+## How Credit Consumption Works
 
-Credits are consumed based on the type of interaction you have with Kliv's AI assistant:
+The credit system operates on two tiers based on the type of response you receive from Kliv's AI. When you chat with the assistant, the credit usage depends entirely on whether Kliv performs actions on your project or responds with information and guidance.
 
-### **Full Credit (1 Credit)**
-Used when the AI takes **action** on your project:
-- Editing or creating files
-- Making code changes
-- Adding new features or components
-- Fixing bugs or errors
-- Installing dependencies
-- Any modification to your project
+Full credits are consumed when Kliv takes any action on your project. This includes editing files, creating new components, making code changes, fixing bugs, installing dependencies, or any other modification to your website. These actions represent the AI actively building or changing your project, which requires computational resources and generates tangible value in your development process.
 
-### **Half Credit (0.5 Credits)**
-Used for **conversational responses** without actions:
-- Answering questions about your project
-- Providing explanations or guidance
-- Discussing design options
-- Code reviews or suggestions
-- General help and troubleshooting
+Half credits are used for conversational responses where Kliv provides information, explanations, or guidance without making changes to your project. This includes answering questions about your site, explaining how features work, providing design suggestions, or offering troubleshooting advice. These interactions are valuable but don't modify your actual project files.
 
-## Credit Usage Examples
+## Free vs Pro Credit Systems
 
-**Actions That Use 1 Full Credit:**
-- "Add a contact form to my homepage"
-- "Change the color scheme to blue and white"
-- "Create a new about page"
-- "Fix the mobile responsiveness issue"
-- "Install a chart library and create a dashboard"
+The credit system works differently depending on your subscription level, with each approach designed to serve different user needs and usage patterns.
 
-**Responses That Use 0.5 Credits:**
-- "How do I make my site load faster?"
-- "What's the best way to organize my navigation menu?"
-- "Can you explain how the contact form works?"
-- "What are some good color combinations for my brand?"
-- "Help me understand this error message"
+### Free Plan Structure
 
-## Free vs Pro Credit Allowances
+Free users operate on a daily credit allowance system that provides up to five credits per day, with a monthly maximum of thirty credits. This daily refresh system means you start each day with up to five credits available, regardless of how many you used the previous day. Unused credits don't carry over to the next day, ensuring fair distribution of resources across all free users.
 
-### 🆓 **Free Plan**
-**Daily Limit:** Up to 5 credits per day  
-**Monthly Limit:** Up to 30 credits per month  
-**Refresh:** Credits automatically recharge daily
+The daily limit prevents any single user from consuming excessive resources while still providing enough credits for meaningful development work. This structure is ideal for learning, experimenting with features, and building smaller projects at a comfortable pace. The monthly cap of thirty credits provides a safety net that ensures the daily system works fairly for everyone.
 
-**How it works:**
-- Start each day with up to 5 credits available
-- Use them anytime throughout the day
-- Unused credits don't carry over to the next day
-- Monthly cap ensures fair usage across all free users
-- Perfect for learning, small projects, and experimentation
+### Pro Plan Flexibility  
 
-**Example usage pattern:**
-- Day 1: Use 3 credits → 2 remaining
-- Day 2: Start with 5 credits again
-- Continue building at your own pace
+Pro subscribers receive their full monthly credit allowance at the beginning of each billing cycle, with no daily restrictions on usage. This means you can use all your credits in a single day if you're working intensively on a project, or spread them throughout the month based on your workflow preferences.
 
-### 💎 **Pro Plan**
-**Monthly Allowance:** Varies by subscription tier  
-**Usage:** Use all credits anytime within the month  
-**No Daily Limits:** Build intensive projects without daily restrictions  
-**No Rollover:** Credits reset at the start of each billing cycle
+Credits reset at the start of each billing cycle rather than rolling over, encouraging regular platform engagement while providing predictable monthly limits. This system is designed for professional users who need the flexibility to work intensively on projects without artificial daily constraints.
 
-**How it works:**
-- Receive your full monthly credit allowance immediately
-- Use them all in one day or spread throughout the month
-- No daily usage restrictions
-- Credits reset on your billing date
-- Ideal for professional projects and intensive development
+Pro users also receive additional benefits beyond credit allocation. Most notably, the "Made with Kliv" attribution badge is automatically removed from all published sites, providing a completely branded experience for your projects. Pro subscribers also receive priority hosting performance and enhanced support response times.
 
-**Additional Pro Benefits:**
-- **No "Made with Kliv" Badge:** Your published sites won't display the attribution badge
-- **Higher Credit Limits:** More credits for larger projects
-- **Priority Support:** Faster response times for help requests
-- **Advanced Features:** Access to premium templates and integrations
+## Credit Management and Optimization
 
-## Managing Your Credits
+Your credit balance is always visible in your project dashboard, along with information about your current plan's refresh schedule. Free users can see when their next daily refresh occurs, while Pro users can track their monthly allowance and usage patterns.
 
-### **Checking Your Balance**
-- View your current credit balance in the project dashboard
-- See daily refresh status (Free plan) or monthly allowance (Pro plan)
-- Track usage history to understand your patterns
+The most effective way to optimize credit usage is understanding the difference between action requests and informational queries. When you're planning changes or want to understand how something works, ask questions first using half-credit responses. This helps you make informed decisions before requesting changes that consume full credits.
 
-### **Optimizing Credit Usage**
-- **Ask questions first:** Use 0.5 credits to plan before making changes
-- **Batch requests:** Combine multiple changes into one conversation
-- **Be specific:** Clear instructions lead to better results with fewer iterations
-- **Test thoroughly:** Catch issues early to avoid credit-consuming fixes
+Activities like viewing your projects, accessing published sites, browsing the template gallery, and managing your account don't consume any credits. Only interactions with the AI assistant that result in responses consume credits, whether conversational or action-based.
 
-### **What Doesn't Use Credits**
-- Viewing your projects
-- Accessing published sites
-- Browsing templates
-- Reading documentation
-- Account management
-- Publishing and deployment
+## Subscription Considerations
 
-## Billing and Upgrades
+The credit system is designed to scale with your needs and usage patterns. Free users can evaluate the platform and build smaller projects without cost, while Pro subscribers get the flexibility and additional features needed for professional development work.
 
-**Need more credits?** Compare our subscription plans to find the right fit:
-- [View Pricing Plans →](/account/billing)
-- [Upgrade Your Account →](/account/settings)
-
-**Questions about billing?** Our billing section covers:
-- Subscription management
-- Payment methods
-- Invoicing and receipts
-- Plan comparisons
-
-## Credit System Benefits
-
-### **Fair Usage**
-- Ensures platform resources are distributed equitably
-- Prevents abuse while allowing generous usage for legitimate projects
-- Scales with your needs as you grow
-
-### **Predictable Costs**
-- Know exactly what actions will cost
-- Plan your development workflow around your credit allowance
-- No surprise charges or hidden fees
-
-### **Flexible Building**
-- Work at your own pace without time pressure
-- Take breaks and return when ready
-- Credits provide structure without limiting creativity
-
----
-
-**Ready to start building?** Your credits are waiting:
-- [Create Your First Website →](/getting-started/first-website)
-- [Browse Templates →](/templates/app-store)
-- [Upgrade to Pro →](/account/billing)
+Both plans provide transparent, predictable usage costs without hidden fees or surprise charges. The system ensures platform resources are distributed fairly while giving you the freedom to work at your own pace and take breaks as needed without losing progress or facing time pressure.
