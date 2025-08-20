@@ -52,8 +52,10 @@ Build a completely custom website tailored to your exact requirements.
 
 ### **Starting From Scratch**
 Give a detailed initial prompt so Kliv understands your vision:
-- "Create a photography portfolio with a dark theme, image gallery, about page, and contact form"
-- "Build a SaaS landing page with hero section, features, pricing, and testimonials"
+
+**Example 1:** *"I need a website for my wedding photography business called 'Sarah Chen Photography' based in Portland, Oregon. I specialize in outdoor and destination weddings with a romantic, natural style. The site should have a clean, elegant design with lots of white space and soft colors like blush pink and sage green. I need a homepage with my best wedding photos in a large gallery, an about page telling my story of how I got into photography after my own wedding, a services page showing my three packages (elopement, half-day, and full-day coverage with prices ranging from $1,200 to $4,500), a portfolio section organized by wedding type, and a contact form where couples can inquire about their date. I also want to include testimonials from past clients and my Instagram feed integrated somewhere."*
+
+**Example 2:** *"I'm launching a meal prep delivery service called 'Fresh Start Kitchen' in Austin, Texas, and need a website that converts visitors into customers. We deliver healthy, portion-controlled meals to busy professionals and fitness enthusiasts. The site should feel fresh and energetic with green and orange colors. I need a homepage that explains our service with photos of our meals, a menu page showing this week's options organized by dietary preferences (keto, vegan, paleo, etc.), pricing for our weekly plans ($89 for 5 meals, $159 for 10 meals, $220 for 15 meals), an about section explaining our chef's background and our local sourcing philosophy, customer reviews, a simple sign-up flow where people can select their plan and delivery day, and a FAQ section covering common questions about ingredients, delivery areas, and how to pause subscriptions."*
 
 ### **Making Changes**
 Be specific about what and where:
