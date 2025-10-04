@@ -38,7 +38,7 @@ Innan du kontaktar support, kontrollera om din fråga besvaras i vår omfattande
 - **[Kreditguide](/sv/getting-started/credits)** - Förstå kreditsystemet
 - **[Mallar](/sv/templates/app-store)** - Arbeta med mallar vs. bygga från grunden
 - **[Publicering](/sv/publishing/basics)** - Distribuera och hantera dina sajter
-- **[Integrationer](/sv/backend/supabase)** - Supabase och GitHub-inställning
+- **[GitHub-integration](/sv/collaboration/github)** - Versionskontrollinställning
 
 ## Svarstider
 

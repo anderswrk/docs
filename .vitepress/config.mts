@@ -71,6 +71,18 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Cloud',
+          items: [
+            { text: 'Overview', link: '/cloud/' },
+            { text: 'Database', link: '/cloud/database' },
+            { text: 'Secrets', link: '/cloud/secrets' },
+            { text: 'Edge Functions', link: '/cloud/functions' },
+            { text: 'Email Delivery', link: '/cloud/email-delivery' },
+            { text: 'Email Templates', link: '/cloud/email-templates' },
+            { text: 'Admin Interface', link: '/cloud/admin' }
+          ]
+        },
+        {
           text: 'Templates',
           items: [
             { text: 'App Store', link: '/templates/app-store' },
@@ -123,6 +135,18 @@ export default defineConfig({
           ]
         },
         {
+          text: 'クラウド',
+          items: [
+            { text: '概要', link: '/ja/cloud/' },
+            { text: 'データベース', link: '/ja/cloud/database' },
+            { text: 'シークレット管理', link: '/ja/cloud/secrets' },
+            { text: 'エッジ関数', link: '/ja/cloud/functions' },
+            { text: 'メール配信', link: '/ja/cloud/email-delivery' },
+            { text: 'メールテンプレート', link: '/ja/cloud/email-templates' },
+            { text: '管理インターフェース', link: '/ja/cloud/admin' }
+          ]
+        },
+        {
           text: 'テンプレート',
           items: [
             { text: 'アプリストア', link: '/ja/templates/app-store' },
@@ -172,6 +196,18 @@ export default defineConfig({
             { text: 'Skapa konto', link: '/sv/getting-started/creating-account' },
             { text: 'Din första webbplats', link: '/sv/getting-started/first-website' },
             { text: 'Förstå krediter', link: '/sv/getting-started/credits' }
+          ]
+        },
+        {
+          text: 'Moln',
+          items: [
+            { text: 'Översikt', link: '/sv/cloud/' },
+            { text: 'Databas', link: '/sv/cloud/database' },
+            { text: 'Hemlighetshantering', link: '/sv/cloud/secrets' },
+            { text: 'Edge Functions', link: '/sv/cloud/functions' },
+            { text: 'E-postleverans', link: '/sv/cloud/email-delivery' },
+            { text: 'E-postmallar', link: '/sv/cloud/email-templates' },
+            { text: 'Administrationsgränssnitt', link: '/sv/cloud/admin' }
           ]
         },
         {

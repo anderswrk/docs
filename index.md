@@ -25,7 +25,7 @@ features:
   - title: 🔧 Smart Debugging
     details: Kliv reads console logs and fixes errors automatically, reducing debugging time.
   - title: 🔗 Backend Integration
-    details: Native Supabase integration for authentication, databases, and serverless functions.
+    details: Built-in support for authentication, databases, and serverless functions.
 ---
 
 ## Documentation Overview
@@ -42,7 +42,7 @@ Discover how to use Kliv's AI assistant effectively, implement common features, 
 Explore the template library, learn to build from scratch, and understand how to publish your applications with custom domains.
 
 ### 🔧 **Backend & Collaboration**
-Set up Supabase integration for databases and authentication, manage users, and connect with GitHub for version control.
+Manage users and connect with GitHub for version control.
 
 ### 💡 **Advanced Features**
 Optimize performance, implement e-commerce functionality, and explore custom development options.

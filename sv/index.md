@@ -25,7 +25,7 @@ features:
   - title: 🔧 Smart Debugging
     details: Kliv läser konsolloggar och fixar fel automatiskt, vilket minskar debuggingtiden.
   - title: 🔗 Backend-integration
-    details: Inbyggd Supabase-integration för autentisering, databaser och serverlösa funktioner.
+    details: Inbyggt stöd för autentisering, databaser och serverlösa funktioner.
 ---
 
 ## Dokumentationsöversikt
@@ -42,7 +42,7 @@ Upptäck hur du använder Klivs AI-assistent effektivt, implementerar vanliga fu
 Utforska mallbiblioteket, lär dig bygga från grunden och förstå hur du publicerar dina applikationer med anpassade domäner.
 
 ### 🔧 **Backend & Samarbete**
-Sätt upp Supabase-integration för databaser och autentisering, hantera användare och anslut med GitHub för versionskontroll.
+Hantera användare och anslut med GitHub för versionskontroll.
 
 ### 💡 **Avancerade Funktioner**
 Optimera prestanda, implementera e-handelsfunktionalitet och utforska anpassade utvecklingsalternativ.

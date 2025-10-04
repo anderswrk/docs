@@ -38,7 +38,7 @@ Before contacting support, check if your question is answered in our comprehensi
 - **[Credits Guide](/getting-started/credits)** - Understanding the credit system
 - **[Templates](/templates/app-store)** - Working with templates vs. building from scratch
 - **[Publishing](/publishing/basics)** - Deploying and managing your sites
-- **[Integrations](/backend/supabase)** - Supabase and GitHub setup
+- **[GitHub Integration](/collaboration/github)** - Version control setup
 
 ## Response Times
 
