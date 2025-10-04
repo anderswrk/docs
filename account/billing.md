@@ -60,4 +60,3 @@ For detailed feature comparisons and current pricing information, visit our pric
 **Next Steps:**
 - [View Detailed Pricing →](https://kliv.dev/pricing)
 - [Understanding Credits →](/getting-started/credits)
-- [Account Settings →](/account/settings)

@@ -3,51 +3,61 @@ layout: home
 
 hero:
   name: "Kliv"
-  text: "AI-driven webbutveckling"
+  text: "AI-driven Webbutveckling"
   tagline: "Bygg vackra React-applikationer genom naturlig konversation"
   actions:
     - theme: brand
       text: Kom igång
       link: /sv/getting-started/
     - theme: alt
-      text: Se exempel
-      link: /sv/examples/
+      text: Vad är Kliv?
+      link: /sv/welcome/what-is-kliv
 
 features:
-  - title: 🤖 AI-först utveckling
-    details: Chatta med Kliv för att bygga, modifiera och felsöka dina applikationer med naturligt språk. Ingen manuell kodning behövs.
-  - title: ⚡ Realtidsförhandsvisning
-    details: Se dina ändringar direkt i live-förhandsvisningen när Kliv modifierar din kod. Vad du ser är vad du får.
-  - title: 🎨 Modern teknikstack
-    details: Byggd på React, TypeScript, Tailwind CSS och Vite. Få alla fördelar med modern webbutveckling.
-  - title: 🚀 Ett-klicks distribution
-    details: Distribuera dina applikationer direkt med inbyggd hosting. Anpassade domäner och SSL inkluderat.
-  - title: 🔧 Smart felsökning
-    details: Kliv kan läsa konsolloggar och fixa fel automatiskt. Spendera mindre tid på felsökning, mer tid på att bygga.
-  - title: 📱 Responsiv som standard
-    details: Varje komponent och layout är mobil-först och responsiv. Dina appar fungerar perfekt på alla enheter.
+  - title: 🤖 AI-assistent
+    details: Chatta med Kliv för att bygga, modifiera och debugga dina applikationer med naturligt språk. Ingen kodning krävs.
+  - title: ⚡ Realtidsförhandsgranskning
+    details: Se dina ändringar direkt i liveförhandsgranskningen när Kliv modifierar din kod i realtid.
+  - title: 🎨 Modern Teknikstack
+    details: Byggd på React, TypeScript, Tailwind CSS och Vite med shadcn/ui-komponenter inkluderade.
+  - title: 🚀 Ett-klicks Publicering
+    details: Distribuera dina applikationer omedelbart med inbyggd hosting och stöd för anpassade domäner.
+  - title: 🔧 Smart Debugging
+    details: Kliv läser konsolloggar och fixar fel automatiskt, vilket minskar debuggingtiden.
+  - title: 🔗 Backend-integration
+    details: Inbyggd Supabase-integration för autentisering, databaser och serverlösa funktioner.
 ---
 
-## Vad är Kliv?
+## Dokumentationsöversikt
 
-Kliv är en AI-driven webbutvecklingsplattform som låter dig bygga React-applikationer genom naturlig konversation. Beskriv helt enkelt vad du vill bygga, så genererar Kliv koden, skapar komponenter och hanterar de tekniska detaljerna åt dig.
+Denna dokumentation täcker allt du behöver veta om att bygga med Kliv:
 
-## Snabbt exempel
+### 🚀 **Kom igång**
+Lär dig grunderna för att skapa ditt konto, förstå krediter och bygga din första webbplats med Klivs AI-assistent.
 
-```
-Du: "Skapa en landningssida för ett kafé med en hero-sektion, meny och kontaktformulär"
+### 🏗️ **Bygga Applikationer**
+Upptäck hur du använder Klivs AI-assistent effektivt, implementerar vanliga funktioner och utnyttjar avancerade möjligheter för komplexa applikationer.
 
-Kliv: "Jag skapar en vacker kafé-landningssida med en hero-sektion som framhäver ditt varumärke, en elegant menyvisning och ett kontaktformulär. Låt mig bygga det åt dig..."
-```
+### 📦 **Mallar & Publicering**
+Utforska mallbiblioteket, lär dig bygga från grunden och förstå hur du publicerar dina applikationer med anpassade domäner.
 
-Inom några sekunder har du en fullt fungerande, responsiv webbplats redo att distribuera.
+### 🔧 **Backend & Samarbete**
+Sätt upp Supabase-integration för databaser och autentisering, hantera användare och anslut med GitHub för versionskontroll.
 
-## Varför välja Kliv?
+### 💡 **Avancerade Funktioner**
+Optimera prestanda, implementera e-handelsfunktionalitet och utforska anpassade utvecklingsalternativ.
 
-- **Ingen kodning krävs**: Bygg professionella applikationer utan att skriva en enda rad kod
-- **Omedelbara resultat**: Se dina idéer komma till liv i realtid
-- **Produktionsredo**: Distribuera omedelbart med enterprise-kvalitet hosting
-- **Helt anpassningsbar**: Alla aspekter kan modifieras genom konversation
-- **Moderna standarder**: Byggd med den senaste webbteknologin och bästa praxis
+### ❓ **Hjälp & Support**
+Hitta svar på vanliga frågor, felsök problem och lär dig hur du får hjälp när du behöver det.
 
-Redo att börja bygga? [Kom igång nu →](/sv/getting-started/)
+---
+
+## Snabblänkar
+
+- **Ny på Kliv?** Börja med [Vad är Kliv?](/sv/welcome/what-is-kliv)
+- **Redo att bygga?** Kolla in [Snabbstartsguiden](/sv/welcome/quick-start)
+- **Behöver hjälp?** Besök våra [FAQ](/sv/help/faq)
+
+---
+
+*Redo att börja bygga? [Skapa din första webbplats →](/sv/getting-started/first-website)*

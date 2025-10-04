@@ -208,4 +208,4 @@ While Kliv handles the coding, understanding web development concepts can help:
 - Critical issues: Same day response
 - Emergency support available for enterprise customers
 
-Still have questions? [Contact our support team](mailto:support@kliv.dev) or check our [troubleshooting guide](/help/troubleshooting).
+Still have questions? [Contact our support team](mailto:support@kliv.dev).

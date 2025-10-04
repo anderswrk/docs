@@ -50,4 +50,4 @@ If your SSL certificate shows as pending beyond 10-15 minutes, ensure your domai
 
 ---
 
-**Need help?** Check our [troubleshooting guide →](/help/troubleshooting) or [contact support →](/help/getting-help)
+**Need help?** [Contact support →](/help/getting-help)

@@ -39,4 +39,3 @@ For enterprise customers, additional security features including SAML integratio
 **Related Documentation:**
 - [User Management and Team Security](/collaboration/user-management)
 - [Platform Security Practices](https://kliv.dev/en/security)
-- [Account Settings](/account/settings)

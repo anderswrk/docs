@@ -10,27 +10,48 @@ export default defineConfig({
   locales: {
     root: {
       label: 'English',
-      lang: 'en'
+      lang: 'en',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Getting Started', link: '/getting-started/' },
+          { text: 'Templates', link: '/templates/app-store' },
+          { text: 'Publishing', link: '/publishing/basics' },
+          { text: 'Back to Kliv', link: 'https://kliv.dev' }
+        ]
+      }
     },
     ja: {
       label: '日本語',
       lang: 'ja',
-      link: '/ja/'
+      link: '/ja/',
+      themeConfig: {
+        nav: [
+          { text: 'ホーム', link: '/ja/' },
+          { text: 'はじめに', link: '/ja/getting-started/' },
+          { text: 'テンプレート', link: '/ja/templates/app-store' },
+          { text: '公開', link: '/ja/publishing/basics' },
+          { text: 'Klivに戻る', link: 'https://kliv.dev' }
+        ]
+      }
     },
     sv: {
       label: 'Svenska', 
       lang: 'sv',
-      link: '/sv/'
+      link: '/sv/',
+      themeConfig: {
+        nav: [
+          { text: 'Hem', link: '/sv/' },
+          { text: 'Kom igång', link: '/sv/getting-started/' },
+          { text: 'Mallar', link: '/sv/templates/app-store' },
+          { text: 'Publicering', link: '/sv/publishing/basics' },
+          { text: 'Tillbaka till Kliv', link: 'https://kliv.dev' }
+        ]
+      }
     }
   },
 
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Templates', link: '/templates/app-store' },
-      { text: 'Publishing', link: '/publishing/basics' }
-    ],
 
     sidebar: {
       '/': [
@@ -66,7 +87,6 @@ export default defineConfig({
         {
           text: 'Integrations',
           items: [
-            { text: 'Supabase', link: '/backend/supabase' },
             { text: 'GitHub', link: '/collaboration/github' }
           ]
         },
@@ -85,16 +105,118 @@ export default defineConfig({
             { text: 'Getting Help', link: '/help/getting-help' }
           ]
         }
+      ],
+      '/ja/': [
+        {
+          text: 'ようこそ',
+          items: [
+            { text: 'Klivとは？', link: '/ja/welcome/what-is-kliv' },
+            { text: 'クイックスタート', link: '/ja/welcome/quick-start' }
+          ]
+        },
+        {
+          text: 'はじめに',
+          items: [
+            { text: 'アカウント作成', link: '/ja/getting-started/creating-account' },
+            { text: '初めてのウェブサイト', link: '/ja/getting-started/first-website' },
+            { text: 'クレジット制について', link: '/ja/getting-started/credits' }
+          ]
+        },
+        {
+          text: 'テンプレート',
+          items: [
+            { text: 'アプリストア', link: '/ja/templates/app-store' },
+            { text: 'ゼロから構築', link: '/ja/templates/from-scratch' }
+          ]
+        },
+        {
+          text: '公開',
+          items: [
+            { text: '公開の基本', link: '/ja/publishing/basics' },
+            { text: 'カスタムドメイン', link: '/ja/publishing/custom-domains' }
+          ]
+        },
+        {
+          text: '連携機能',
+          items: [
+            { text: 'GitHub', link: '/ja/collaboration/github' }
+          ]
+        },
+        {
+          text: 'アカウント管理',
+          items: [
+            { text: 'ユーザー管理', link: '/ja/collaboration/user-management' },
+            { text: 'セキュリティ', link: '/ja/account/security' },
+            { text: '料金・請求', link: '/ja/account/billing' }
+          ]
+        },
+        {
+          text: 'ヘルプ・サポート',
+          items: [
+            { text: 'よくある質問', link: '/ja/help/faq' },
+            { text: 'ヘルプの利用方法', link: '/ja/help/getting-help' }
+          ]
+        }
+      ],
+      '/sv/': [
+        {
+          text: 'Välkommen',
+          items: [
+            { text: 'Vad är Kliv?', link: '/sv/welcome/what-is-kliv' },
+            { text: 'Snabbstart', link: '/sv/welcome/quick-start' }
+          ]
+        },
+        {
+          text: 'Kom igång',
+          items: [
+            { text: 'Skapa konto', link: '/sv/getting-started/creating-account' },
+            { text: 'Din första webbplats', link: '/sv/getting-started/first-website' },
+            { text: 'Förstå krediter', link: '/sv/getting-started/credits' }
+          ]
+        },
+        {
+          text: 'Mallar',
+          items: [
+            { text: 'App Store', link: '/sv/templates/app-store' },
+            { text: 'Bygga från grunden', link: '/sv/templates/from-scratch' }
+          ]
+        },
+        {
+          text: 'Publicering',
+          items: [
+            { text: 'Grundläggande publicering', link: '/sv/publishing/basics' },
+            { text: 'Anpassade domäner', link: '/sv/publishing/custom-domains' }
+          ]
+        },
+        {
+          text: 'Integrationer',
+          items: [
+            { text: 'GitHub', link: '/sv/collaboration/github' }
+          ]
+        },
+        {
+          text: 'Kontohantering',
+          items: [
+            { text: 'Användarhantering', link: '/sv/collaboration/user-management' },
+            { text: 'Säkerhet', link: '/sv/account/security' },
+            { text: 'Fakturering', link: '/sv/account/billing' }
+          ]
+        },
+        {
+          text: 'Hjälp & Support',
+          items: [
+            { text: 'FAQ', link: '/sv/help/faq' },
+            { text: 'Få hjälp', link: '/sv/help/getting-help' }
+          ]
+        }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/kliv-dev' }
     ],
 
     footer: {
-      message: 'Built with VitePress',
-      copyright: 'Copyright © 2024 Kliv'
+      message: 'Built by Kliv with VitePress'
     }
   }
 })

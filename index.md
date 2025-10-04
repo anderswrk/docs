@@ -56,8 +56,7 @@ Find answers to common questions, troubleshoot issues, and learn how to get help
 
 - **New to Kliv?** Start with [What is Kliv?](/welcome/what-is-kliv)
 - **Ready to build?** Check out the [Quick Start Guide](/welcome/quick-start)
-- **Need help?** Visit our [FAQ](/help/faq) or [Troubleshooting](/help/troubleshooting) pages
-- **Advanced user?** Explore [Performance Optimization](/advanced/performance) and [Custom Development](/advanced/custom-development)
+- **Need help?** Visit our [FAQ](/help/faq)
 
 ---
 
