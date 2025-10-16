@@ -11,6 +11,11 @@ Lagra din applikationsdata med automatisk säkerhet, säkerhetskopior och gransk
 
 [Läs mer om Databas →](/sv/cloud/database)
 
+### Innehållslagring
+Lagra användaruppladdade filer som bilder, dokument, PDF-filer och videor. Inkluderar automatisk bildoptimering, åtkomstkontroll och edge-funktionsintegration.
+
+[Läs mer om Innehållslagring →](/sv/cloud/content-storage)
+
 ### Hemlighetshantering
 Lagra API-autentiseringsuppgifter och känslig konfiguration säkert. Hemligheter krypteras, maskeras i gränssnittet och är automatiskt tillgängliga för dina funktioner.
 
