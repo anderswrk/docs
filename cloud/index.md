@@ -11,6 +11,11 @@ Store your application data with automatic security, backups, and audit trails. 
 
 [Learn about Database →](/cloud/database)
 
+### Content Storage
+Upload and manage files like images, documents, and videos with automatic optimization and access control. Perfect for user avatars, file sharing, and image galleries.
+
+[Learn about Content Storage →](/cloud/content-storage)
+
 ### Secrets Management
 Securely store API credentials and sensitive configuration. Secrets are encrypted, masked in the UI, and automatically available to your functions.
 
