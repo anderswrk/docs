@@ -78,6 +78,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/cloud/' },
             { text: 'Database', link: '/cloud/database' },
+            { text: 'Content Storage', link: '/cloud/content-storage' },
             { text: 'Secrets', link: '/cloud/secrets' },
             { text: 'Edge Functions', link: '/cloud/functions' },
             { text: 'Email Delivery', link: '/cloud/email-delivery' },
@@ -142,6 +143,7 @@ export default defineConfig({
           items: [
             { text: '概要', link: '/ja/cloud/' },
             { text: 'データベース', link: '/ja/cloud/database' },
+            { text: 'コンテンツストレージ', link: '/ja/cloud/content-storage' },
             { text: 'シークレット管理', link: '/ja/cloud/secrets' },
             { text: 'エッジ関数', link: '/ja/cloud/functions' },
             { text: 'メール配信', link: '/ja/cloud/email-delivery' },
@@ -206,6 +208,7 @@ export default defineConfig({
           items: [
             { text: 'Översikt', link: '/sv/cloud/' },
             { text: 'Databas', link: '/sv/cloud/database' },
+            { text: 'Innehållslagring', link: '/sv/cloud/content-storage' },
             { text: 'Hemlighetshantering', link: '/sv/cloud/secrets' },
             { text: 'Edge Functions', link: '/sv/cloud/functions' },
             { text: 'E-postleverans', link: '/sv/cloud/email-delivery' },
