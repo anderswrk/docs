@@ -19,7 +19,7 @@ Kliv builds applications using modern web technologies:
 - Various other modern libraries as needed
 
 ### Is Kliv free to use?
-Yes! Kliv offers a free plan with 5 credits per day (up to 30 per month) that includes full website hosting on kliv.site domains. Free sites display a small "Made with Kliv" badge and support up to 10 team members. Professional plans provide monthly credit allowances, custom domain support, remove the attribution badge, and include unlimited team members.
+Yes! Kliv offers a free plan with 10 credits per day (up to 30 per month) that includes full website hosting on kliv.site domains. Free sites display a small "Made with Kliv" badge and support up to 10 team members. Professional plans provide monthly credit allowances, custom domain support, remove the attribution badge, and include unlimited team members.
 
 ## Building Applications
 
@@ -43,7 +43,7 @@ You can build virtually any type of web application:
 
 **Half credit (0.5 credits):** Used for conversational responses without actions - answering questions, providing guidance, or explanations.
 
-**Free plan:** 5 credits daily, 30 monthly max, automatically refresh each day.
+**Free plan:** 10 credits daily, 30 monthly max, automatically refresh each day.
 **Pro plans:** Monthly allowances that can be used anytime, reset each billing cycle.
 
 ### How do I communicate with Kliv effectively?
@@ -128,7 +128,7 @@ Go to user management, enter their email address, and send an invitation. They'l
 ## Account and Billing
 
 ### What are the different subscription plans?
-**Free:** 5 credits daily (30/month), kliv.site hosting, "Made with Kliv" badge, up to 10 users
+**Free:** 10 credits daily (60/month), kliv.site hosting, "Made with Kliv" badge, up to 10 users
 **Professional:** Monthly credit allowances, custom domains, no attribution badge, unlimited users, priority support  
 **Enterprise:** SAML/SSO, custom roles, dedicated instances, advanced features
 

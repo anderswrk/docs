@@ -16,7 +16,7 @@ Kreditsystemet fungerar olika beroende på din prenumerationsnivå, med varje ap
 
 ### Gratis Plan Struktur
 
-Gratisanvändare arbetar med ett dagligt kreditbidragssystem som ger upp till fem krediter per dag, med ett månatligt maximum på trettio krediter. Detta dagliga uppdateringssystem betyder att du börjar varje dag med upp till fem krediter tillgängliga, oavsett hur många du använde föregående dag. Oanvända krediter överförs inte till nästa dag, vilket säkerställer rättvis fördelning av resurser över alla gratisanvändare.
+Gratisanvändare arbetar med ett dagligt kreditbidragssystem som ger upp till tio krediter per dag, med ett månatligt maximum på trettio krediter. Detta dagliga uppdateringssystem betyder att du börjar varje dag med upp till tio krediter tillgängliga, oavsett hur många du använde föregående dag. Oanvända krediter överförs inte till nästa dag, vilket säkerställer rättvis fördelning av resurser över alla gratisanvändare.
 
 Den dagliga gränsen förhindrar att någon enskild användare konsumerar överdrivna resurser medan den fortfarande ger tillräckligt med krediter för meningsfullt utvecklingsarbete. Denna struktur är idealisk för att lära sig, experimentera med funktioner och bygga mindre projekt i en bekväm takt. Det månatliga taket på trettio krediter ger ett säkerhetsnät som säkerställer att det dagliga systemet fungerar rättvist för alla.
 

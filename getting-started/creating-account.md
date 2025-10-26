@@ -22,7 +22,7 @@ Both methods provide the same access to all Kliv features and can be used interc
 
 Once your account is created, you're immediately taken to the Kliv workspace where the AI begins building the website you described. There's no additional setup required—you can start collaborating with the AI assistant right away.
 
-Your account starts on the free plan, which includes five credits per day, hosting for your websites, and access to all core features. You can upgrade to a professional plan anytime if you need more credits or advanced features like custom domains.
+Your account starts on the free plan, which includes ten credits per day, hosting for your websites, and access to all core features. You can upgrade to a professional plan anytime if you need more credits or advanced features like custom domains.
 
 ## Account Features
 

@@ -16,7 +16,7 @@ The credit system works differently depending on your subscription level, with e
 
 ### Free Plan Structure
 
-Free users operate on a daily credit allowance system that provides up to five credits per day, with a monthly maximum of thirty credits. This daily refresh system means you start each day with up to five credits available, regardless of how many you used the previous day. Unused credits don't carry over to the next day, ensuring fair distribution of resources across all free users.
+Free users operate on a daily credit allowance system that provides up to ten credits per day, with a monthly maximum of thirty credits. This daily refresh system means you start each day with up to ten credits available, regardless of how many you used the previous day. Unused credits don't carry over to the next day, ensuring fair distribution of resources across all free users.
 
 The daily limit prevents any single user from consuming excessive resources while still providing enough credits for meaningful development work. This structure is ideal for learning, experimenting with features, and building smaller projects at a comfortable pace. The monthly cap of thirty credits provides a safety net that ensures the daily system works fairly for everyone.
 
