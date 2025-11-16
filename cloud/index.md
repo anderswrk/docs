@@ -43,50 +43,6 @@ Create reusable email templates with Markdown formatting and dynamic variables f
 
 ---
 
-## Architecture Overview
-
-```mermaid
-graph TB
-    subgraph project["Your Kliv Project"]
-        subgraph backend["Backend Services"]
-            DB[(Database<br/>Global DB<br/>+ RLS<br/>+ Audit)]
-            SEC[Secrets<br/>Encrypted<br/>Storage<br/>+ Masking]
-            FUNC[Edge Functions<br/>JavaScript<br/>Runtime<br/>+ Logging]
-            CONTENT[Content Storage<br/>Files & Media<br/>+ Access Control<br/>+ Optimization]
-        end
-        
-        SEC -.->|Credentials| FUNC
-        SEC -.->|Config| DB
-        
-        API[REST API<br/>PostgREST-compatible]
-        
-        DB --> API
-        FUNC --> API
-        CONTENT --> API
-        
-        AI[Built and Managed by AI]
-        AI -.->|Creates & Configures| DB
-        AI -.->|Creates & Configures| SEC
-        AI -.->|Creates & Configures| FUNC
-        AI -.->|Creates & Configures| CONTENT
-    end
-    
-    API --> ADMIN[Admin UI<br/>You]
-    API --> APP[Your App<br/>Users]
-    API --> EXT[External APIs<br/>Integrations]
-    
-    style project fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style backend fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style DB fill:#4caf50,stroke:#2e7d32,color:#fff
-    style SEC fill:#ff9800,stroke:#e65100,color:#fff
-    style FUNC fill:#9c27b0,stroke:#6a1b9a,color:#fff
-    style CONTENT fill:#00bcd4,stroke:#006064,color:#fff
-    style API fill:#2196f3,stroke:#0d47a1,color:#fff
-    style AI fill:#ffd54f,stroke:#f57f17
-```
-
----
-
 ## Getting Started
 
 ### Creating Your First Application

@@ -43,50 +43,6 @@ API資格情報と機密設定を安全に保存します。シークレット�
 
 ---
 
-## アーキテクチャ概要
-
-```mermaid
-graph TB
-    subgraph project["Klivプロジェクト"]
-        subgraph backend["バックエンドサービス"]
-            DB[(データベース<br/>Global DB<br/>+ RLS<br/>+ 監査)]
-            SEC[シークレット<br/>暗号化<br/>ストレージ<br/>+ マスキング]
-            FUNC[エッジ関数<br/>JavaScript<br/>ランタイム<br/>+ ログ]
-            CONTENT[コンテンツストレージ<br/>ファイル & メディア<br/>+ アクセス制御<br/>+ 最適化]
-        end
-        
-        SEC -.->|資格情報| FUNC
-        SEC -.->|設定| DB
-        
-        API[REST API<br/>PostgREST互換]
-        
-        DB --> API
-        FUNC --> API
-        CONTENT --> API
-        
-        AI[AIによって構築・管理]
-        AI -.->|作成・構成| DB
-        AI -.->|作成・構成| SEC
-        AI -.->|作成・構成| FUNC
-        AI -.->|作成・構成| CONTENT
-    end
-    
-    API --> ADMIN[管理UI<br/>あなた]
-    API --> APP[あなたのアプリ<br/>ユーザー]
-    API --> EXT[外部API<br/>統合]
-    
-    style project fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style backend fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style DB fill:#4caf50,stroke:#2e7d32,color:#fff
-    style SEC fill:#ff9800,stroke:#e65100,color:#fff
-    style FUNC fill:#9c27b0,stroke:#6a1b9a,color:#fff
-    style CONTENT fill:#00bcd4,stroke:#006064,color:#fff
-    style API fill:#2196f3,stroke:#0d47a1,color:#fff
-    style AI fill:#ffd54f,stroke:#f57f17
-```
-
----
-
 ## はじめに
 
 ### 最初のアプリケーションの作成
