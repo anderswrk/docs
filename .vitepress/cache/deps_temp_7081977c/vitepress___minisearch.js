@@ -1,4 +1,4 @@
-// ../opt/base_modules/node_modules/minisearch/dist/es/index.js
+// ../dev/shm/app/node_modules/minisearch/dist/es/index.js
 var ENTRIES = "ENTRIES";
 var KEYS = "KEYS";
 var VALUES = "VALUES";

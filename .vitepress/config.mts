@@ -7,6 +7,35 @@ export default defineConfig({
   // Output to project root dist directory
   outDir: './dist',
   
+  head: [
+    // Google Fonts
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Mukta:wght@600&display=swap', rel: 'stylesheet' }],
+    
+    // Favicons
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://data.rationalbi.com/assets/rational-master/metadata/apple-touch-icon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://data.rationalbi.com/assets/rational-master/metadata/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://data.rationalbi.com/assets/rational-master/metadata/favicon-16x16.png' }],
+    ['link', { rel: 'manifest', href: 'https://data.rationalbi.com/assets/rational-master/metadata/site.webmanifest' }],
+    ['link', { rel: 'mask-icon', href: 'https://data.rationalbi.com/assets/rational-master/metadata/safari-pinned-tab.svg', color: '#5bbad5' }],
+    ['link', { rel: 'shortcut icon', href: 'https://data.rationalbi.com/assets/rational-master/metadata/favicon.ico' }],
+    
+    // Theme and browser config
+    ['meta', { name: 'msapplication-TileColor', content: '#da532c' }],
+    ['meta', { name: 'msapplication-config', content: 'https://data.rationalbi.com/assets/rational-master/metadata/browserconfig.xml' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    
+    // OpenGraph
+    ['meta', { property: 'og:title', content: 'Kliv Documentation' }],
+    ['meta', { property: 'og:description', content: 'Official documentation for Kliv - AI-powered web development platform' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:site', content: '@klivdev' }],
+  ],
+  
   locales: {
     root: {
       label: 'English',

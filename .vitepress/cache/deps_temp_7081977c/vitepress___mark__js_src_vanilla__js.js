@@ -1,4 +1,4 @@
-// ../opt/base_modules/node_modules/mark.js/src/lib/domiterator.js
+// ../dev/shm/app/node_modules/mark.js/src/lib/domiterator.js
 var DOMIterator = class _DOMIterator {
   /**
    * @param {HTMLElement|HTMLElement[]|NodeList|string} ctx - The context DOM
@@ -494,7 +494,7 @@ var DOMIterator = class _DOMIterator {
    */
 };
 
-// ../opt/base_modules/node_modules/mark.js/src/lib/mark.js
+// ../dev/shm/app/node_modules/mark.js/src/lib/mark.js
 var Mark = class {
   // eslint-disable-line no-unused-vars
   /**
@@ -1638,7 +1638,7 @@ var Mark = class {
   }
 };
 
-// ../opt/base_modules/node_modules/mark.js/src/vanilla.js
+// ../dev/shm/app/node_modules/mark.js/src/vanilla.js
 function Mark2(ctx) {
   const instance = new Mark(ctx);
   this.mark = (sv, opt) => {
