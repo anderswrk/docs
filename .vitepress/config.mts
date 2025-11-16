@@ -1,11 +1,20 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: "Kliv Documentation",
   description: "Official documentation for Kliv - AI-powered web development platform",
   
   // Output to project root dist directory
   outDir: './dist',
+  
+  // Enable Mermaid diagrams
+  mermaid: {
+    // Mermaid configuration options
+  },
+  mermaidPlugin: {
+    class: "mermaid"
+  },
   
   head: [
     // Google Fonts
@@ -290,4 +299,4 @@ export default defineConfig({
       message: 'Built by Kliv with VitePress'
     }
   }
-})
+}))
