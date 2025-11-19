@@ -1,4 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
+import { useRouter, useRoute } from 'vitepress';
+import { watch, onMounted } from 'vue';
 import { getCookie, setCookie, LANG_MAP, REVERSE_LANG_MAP } from './cookie-utils';
 
 export default {
@@ -6,6 +8,9 @@ export default {
   setup() {
     // SSR guard - only run in browser
     if (typeof window === 'undefined') return;
+
+    const router = useRouter();
+    const route = useRoute();
 
     // ===== PREVENT VITEPRESS FROM MANAGING THEME =====
     // Override VitePress's theme management by intercepting localStorage
@@ -96,62 +101,60 @@ export default {
     }, true);
 
     // ===== LANGUAGE SYNCHRONIZATION =====
-    const savedLang = getCookie('lang');
     
-    if (savedLang) {
-      const vpLocale = LANG_MAP[savedLang];
-      
-      if (vpLocale) {
-        const currentPath = window.location.pathname;
-        
-        const isOnCorrectLocale = 
-          (vpLocale === 'en' && !currentPath.startsWith('/ja/') && !currentPath.startsWith('/sv/')) ||
-          currentPath.startsWith(`/${vpLocale}/`);
-        
-        if (!isOnCorrectLocale) {
-          let newPath;
-          
-          if (vpLocale === 'en') {
-            newPath = currentPath.replace(/^\/(ja|sv)\//, '/');
-          } else {
-            if (currentPath.startsWith('/ja/') || currentPath.startsWith('/sv/')) {
-              newPath = currentPath.replace(/^\/(ja|sv)\//, `/${vpLocale}/`);
-            } else {
-              newPath = `/${vpLocale}${currentPath}`;
-            }
-          }
-          
-          console.log('[Kliv] Language cookie detected, redirecting:', savedLang, '→', newPath);
-          window.location.pathname = newPath;
-        }
-      }
+    // Helper to extract locale from path
+    function getLocaleFromPath(path) {
+      if (path.startsWith('/ja/') || path === '/ja') return 'ja';
+      if (path.startsWith('/sv/') || path === '/sv') return 'sv';
+      return 'en';
     }
 
-    // Update language cookie when clicking language links
-    document.addEventListener('click', (e) => {
-      const link = e.target.closest('a[href]');
+    // On mount, check if we need to redirect based on cookie
+    onMounted(() => {
+      const savedLang = getCookie('lang');
       
-      if (link) {
-        const href = link.getAttribute('href');
+      if (savedLang) {
+        const vpLocale = LANG_MAP[savedLang];
         
-        // Only process internal links that change locale
-        if (!href || href.startsWith('http')) return;
-        
-        const currentPath = window.location.pathname;
-        let currentLocale = 'en';
-        if (currentPath.startsWith('/ja/')) currentLocale = 'ja';
-        if (currentPath.startsWith('/sv/')) currentLocale = 'sv';
-        
-        let targetLocale = 'en';
-        if (href.startsWith('/ja/')) targetLocale = 'ja';
-        else if (href.startsWith('/sv/')) targetLocale = 'sv';
-        
-        if (currentLocale !== targetLocale) {
-          const newLang = REVERSE_LANG_MAP[targetLocale] || 'en-US';
-          setCookie('lang', newLang);
-          console.log('[Kliv] Language switching:', currentLocale, '→', targetLocale, '(cookie:', newLang + ')');
+        if (vpLocale) {
+          const currentPath = window.location.pathname;
+          const currentLocale = getLocaleFromPath(currentPath);
+          
+          if (currentLocale !== vpLocale) {
+            let newPath;
+            
+            if (vpLocale === 'en') {
+              newPath = currentPath.replace(/^\/(ja|sv)(\/|$)/, '/');
+            } else {
+              if (currentPath.startsWith('/ja/') || currentPath.startsWith('/sv/')) {
+                newPath = currentPath.replace(/^\/(ja|sv)/, `/${vpLocale}`);
+              } else {
+                newPath = `/${vpLocale}${currentPath === '/' ? '' : currentPath}`;
+              }
+            }
+            
+            console.log('[Kliv] Language cookie detected, redirecting:', savedLang, '→', newPath);
+            router.go(newPath);
+          }
         }
       }
-    }, true);
+    });
+
+    // Watch for route changes to update language cookie
+    watch(
+      () => route.path,
+      (newPath, oldPath) => {
+        if (!oldPath || !newPath) return;
+        
+        const oldLocale = getLocaleFromPath(oldPath);
+        const newLocale = getLocaleFromPath(newPath);
+        
+        if (oldLocale !== newLocale) {
+          const newLang = REVERSE_LANG_MAP[newLocale] || 'en-US';
+          setCookie('lang', newLang);
+          console.log('[Kliv] Language changed:', oldLocale, '→', newLocale, '(cookie:', newLang + ')');
+        }
+      }
+    );
   }
 };
