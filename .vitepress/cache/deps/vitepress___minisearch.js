@@ -1,5 +1,3 @@
-import "./chunk-BUSYA2B4.js";
-
 // ../dev/shm/app/node_modules/minisearch/dist/es/index.js
 var ENTRIES = "ENTRIES";
 var KEYS = "KEYS";

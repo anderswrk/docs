@@ -7,6 +7,16 @@ export default {
     // SSR guard - only run in browser
     if (typeof window === 'undefined') return;
 
+    // ===== CLEANUP: REMOVE CONFLICTING VITEPRESS SETTINGS =====
+    // VitePress stores theme preference in localStorage, which we don't want
+    // We only use cross-domain cookies
+    try {
+      localStorage.removeItem('vitepress-theme-appearance');
+      localStorage.removeItem('vitepress-locale');
+    } catch (e) {
+      // Ignore errors if localStorage is blocked
+    }
+
     // ===== THEME SYNCHRONIZATION =====
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -14,23 +24,20 @@ export default {
      * Apply theme based on cookie preference
      * Supports: "light", "dark", "system"
      */
-    function applyTheme() {
-      const preference = getCookie('theme') || 'system';
+    function applyTheme(preference = null) {
+      const themePref = preference || getCookie('theme') || 'system';
       let effectiveTheme;
 
-      if (preference === 'system') {
+      if (themePref === 'system') {
         // Follow system/browser preference
         effectiveTheme = mediaQuery.matches ? 'dark' : 'light';
       } else {
         // Use explicit user preference
-        effectiveTheme = preference;
+        effectiveTheme = themePref;
       }
 
       // Apply to document
       document.documentElement.classList.toggle('dark', effectiveTheme === 'dark');
-      
-      // Sync with VitePress's internal localStorage
-      localStorage.setItem('vitepress-theme-appearance', effectiveTheme);
     }
 
     // Initial theme application on page load
@@ -38,32 +45,29 @@ export default {
 
     // Listen for system preference changes (when in system mode)
     mediaQuery.addEventListener('change', () => {
-      if (getCookie('theme') === 'system') {
-        applyTheme();
+      const currentPref = getCookie('theme') || 'system';
+      if (currentPref === 'system') {
+        applyTheme('system');
       }
     });
 
-    // Intercept VitePress theme toggle to update cookie
-    // VitePress modifies the 'dark' class on documentElement when toggling
-    setTimeout(() => {
-      const observer = new MutationObserver(() => {
-        const isDark = document.documentElement.classList.contains('dark');
-        const currentCookie = getCookie('theme');
-        const newTheme = isDark ? 'dark' : 'light';
-
-        // Only update cookie if user manually toggled (not in system mode)
-        // and the theme actually changed
-        if (currentCookie !== newTheme && currentCookie !== 'system') {
+    // Intercept VitePress theme toggle button clicks
+    // Use event delegation on the document to catch all clicks
+    document.addEventListener('click', (e) => {
+      // Check if clicked element is the theme toggle button or its child
+      const themeButton = e.target.closest('.VPSwitchAppearance button, button[title*="theme" i], button[title*="appearance" i]');
+      
+      if (themeButton) {
+        // Toggle will happen after this click, so we read the new state after a tick
+        setTimeout(() => {
+          const isDark = document.documentElement.classList.contains('dark');
+          const newTheme = isDark ? 'dark' : 'light';
+          
           setCookie('theme', newTheme);
-          console.log('[VitePress] Theme changed via toggle, updating cookie:', newTheme);
-        }
-      });
-
-      observer.observe(document.documentElement, {
-        attributes: true,
-        attributeFilter: ['class']
-      });
-    }, 100);
+          console.log('[Kliv] Theme toggled, cookie updated:', newTheme);
+        }, 10);
+      }
+    }, true); // Use capture phase to ensure we catch it
 
     // ===== LANGUAGE SYNCHRONIZATION =====
     const savedLang = getCookie('lang');
@@ -97,35 +101,38 @@ export default {
             }
           }
           
-          console.log('[VitePress] Language cookie detected, redirecting to:', newPath);
+          console.log('[Kliv] Language cookie detected, redirecting to:', newPath);
           window.location.pathname = newPath;
         }
       }
     }
 
-    // Update language cookie when user manually changes language
-    // VitePress doesn't provide a clean event for this, so we watch the locale selector
-    setTimeout(() => {
-      const localeLinks = document.querySelectorAll('.VPNavBarMenuGroup a[href^="/ja/"], .VPNavBarMenuGroup a[href^="/sv/"], .VPLocalNav a');
+    // Update language cookie when user clicks language selector
+    // Use event delegation to catch all navigation clicks
+    document.addEventListener('click', (e) => {
+      // Check if clicked element is a link
+      const link = e.target.closest('a[href]');
       
-      localeLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          const href = e.currentTarget.getAttribute('href');
-          
-          // Determine language from href
-          let newLang;
-          if (href.startsWith('/ja/')) {
-            newLang = 'ja-JP';
-          } else if (href.startsWith('/sv/')) {
-            newLang = 'sv-SE';
-          } else {
-            newLang = 'en-US';
-          }
-          
-          console.log('[VitePress] Language manually changed, updating cookie:', newLang);
+      if (link) {
+        const href = link.getAttribute('href');
+        
+        // Check if this is a locale change (different language prefix or removal)
+        const currentPath = window.location.pathname;
+        let currentLocale = 'en';
+        if (currentPath.startsWith('/ja/')) currentLocale = 'ja';
+        if (currentPath.startsWith('/sv/')) currentLocale = 'sv';
+        
+        let targetLocale = 'en';
+        if (href.startsWith('/ja/')) targetLocale = 'ja';
+        if (href.startsWith('/sv/')) targetLocale = 'sv';
+        
+        // If locale is changing, update cookie
+        if (currentLocale !== targetLocale) {
+          const newLang = REVERSE_LANG_MAP[targetLocale] || 'en-US';
           setCookie('lang', newLang);
-        });
-      });
-    }, 500);
+          console.log('[Kliv] Language changed, cookie updated:', newLang);
+        }
+      }
+    }, true); // Use capture phase
   }
 };

@@ -1,0 +1,70 @@
+/* Override Mermaid diagram colors for a more muted appearance */
+.mermaid {
+  /* Reduce color saturation */
+  filter: saturate(0.4);
+}
+
+.mermaid svg {
+  background-color: transparent !important;
+}
+
+/* Light mode styles */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .cluster rect {
+  fill: #f5f5f5 !important;
+  stroke: #999 !important;
+}
+
+.mermaid .cluster-label {
+  fill: #333 !important;
+}
+
+.mermaid .edgeLabel {
+  background-color: #fff !important;
+}
+
+.mermaid .edgePath .path {
+  stroke: #666 !important;
+}
+
+.mermaid .label {
+  color: #333 !important;
+}
+
+/* Dark mode styles */
+.dark .mermaid .node rect,
+.dark .mermaid .node circle,
+.dark .mermaid .node ellipse,
+.dark .mermaid .node polygon,
+.dark .mermaid .cluster rect {
+  fill: #2a2a2a !important;
+  stroke: #666 !important;
+}
+
+.dark .mermaid .cluster-label {
+  fill: #ddd !important;
+}
+
+.dark .mermaid .edgeLabel {
+  background-color: #1a1a1a !important;
+}
+
+.dark .mermaid .edgePath .path {
+  stroke: #888 !important;
+}
+
+.dark .mermaid .label {
+  color: #ddd !important;
+}
+
+/* Fix for diagram container background */
+.dark .mermaid {
+  background-color: transparent !important;
+}
+
+.dark svg[id^="mermaid"] {
+  background-color: transparent !important;
+}
